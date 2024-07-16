@@ -1,0 +1,51 @@
+/*      INICIO BASE       */
+/* ###################### */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+body {
+    font-family: arial;
+}
+ /* ##################### */
+/*      FINAL BASE       */
+
+
+.titulo {
+    text-align: center;
+    color: #003188;
+    font-size: 30px;
+}
+
+.pedido{
+    display:flex;
+    justify-content:space-between;
+}
+
+.linha {
+    flex: 1;
+    border: 0;
+    width: 80%;
+    height: 5px;
+    background-color: #010d22;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.pedido_meio{
+    text-align: center;
+    font-size: 10px;
+}
+
+.pedido_meio h4{
+    text-align: right;
+}
+
+
+
