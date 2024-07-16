@@ -1,0 +1,312 @@
+  /*         INICIO DO CARROCEL      */
+ /* ############################### */
+
+
+  /*         INICIO DOS SLIDES       */
+ /* ############################### */
+
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide-content-quixeramobim {
+    position: absolute;
+    bottom: 80%;
+    top:60%;
+    left: 15%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #003188;
+    
+}
+
+
+/* ############################### */
+  /*         FINAL DOS SLIDES       */
+
+
+
+
+
+
+
+/*         INICIO DOS BOTÕES SOBRE     */
+ /* ################################# */
+
+
+
+.btn-sobre-quixeramobim {
+    position: absolute;
+    bottom: 65%;      
+    left: 15%;
+    top: 75%;
+    width: 80px;
+    height: 25px;        
+    transform: translateX(-50%);
+    background-color: #003188;
+    border: 1px solid #ffffff;
+    color:#fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 2s;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-sobre-quixeramobim:hover{
+    background-color: #ffffff;
+    border: 1px solid #003188;
+    color:#003188;
+    transition: 2s;
+    width: 100px;   
+}
+
+
+
+/* #################################### */
+/*         INICIO DOS BOTÕES SOBRE     */
+ 
+ /* ############################### */
+ /*         FINAL DO CARROCEL      */
+
+
+
+
+ /*         INICIO DO CARROCEL      */
+ /* ############################### */
+.project-container, .project-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.hr1, .hr2{
+    flex: 1;
+    border: 0;
+    height: 20px;
+    background-color: #003188;
+}
+
+.hr3{
+    flex: 1;
+    border: 0;
+    height: 5px;
+    background-color: #003188;
+}
+
+.project-text {
+    margin: 0 10px;
+    font-size: 70px;
+    color: #003188;
+}
+
+.band_brasil{
+    width: 60%;
+    display: block;
+    margin: 0 auto;       
+}
+
+.titulo_brasil{
+    text-align: center;
+    color: #238800;
+}
+
+.Noticia1 {
+    display: flex;
+    justify-content: space-between;
+}
+.Noticia1 img{
+    width: 100%;
+}
+
+
+.box{
+    width: 50%; /* Ajuste conforme necessário */
+    padding: 30px;
+    box-sizing: border-box; /* Inclui padding e border no width */
+}
+
+.box h1{
+    color: #003188;
+    font-size:30px;
+    text-align:justify;
+}
+
+.box h3{
+    text-align: justify;
+}
+
+.box hr3{
+   
+    height: 100%;
+    background-color: #003188;
+}
+
+.btnNoticias {
+    width: 300px;
+    height: 100px;
+    color: #ffffff; /* Cor do texto */
+    background-color: #003188; /* Cor de fundo do botão */
+    border: 2px solid  #ffffff; /* Borda do botão */
+    border-radius: 40px; /* Arredondamento dos cantos */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    text-align: center; /* Centraliza o texto */
+    display: inline-block; /* Faz o botão ocupar apenas o espaço necessário */
+    font-size: 25px; /* Tamanho da fonte */
+    transition: background-color 0.9s ease; /* Transição suave ao passar o mouse */
+}
+
+.btnNoticias:hover {
+    background-color:  #ffffff; /* Cor de fundo ao passar o mouse */
+    color:#003188; /* Cor do texto ao passar o mouse */
+    border: 2px solid  #003188;
+    transition: background-color 0.9s ease;
+}
+
+.btnOracao{
+    width: 250px;
+    height: 80px;
+    color: #ffffff; /* Cor do texto */
+    background-color: #003188; /* Cor de fundo do botão */
+    border: 2px solid  #ffffff; /* Borda do botão */
+    border-radius: 40px; /* Arredondamento dos cantos */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    text-align: center; /* Centraliza o texto */
+    display: inline-block; /* Faz o botão ocupar apenas o espaço necessário */
+    font-size: 25px; /* Tamanho da fonte */
+    transition: background-color 0.9s ease; /* Transição suave ao passar o mouse */
+}
+
+.btnOracao:hover {
+    background-color:  #ffffff; /* Cor de fundo ao passar o mouse */
+    color:#003188; /* Cor do texto ao passar o mouse */
+    border: 2px solid  #003188;
+    transition: background-color 0.9s ease;
+}
+
+.box_oracao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.oracao1, .oracao2, .oracao3{
+    width: 50%; /* Ajuste conforme necessário */
+    padding: 30px;
+    box-sizing: border-box; /* Inclui padding e border no width */
+}
+
+.oracao1 h1{
+    color: #003188;
+    font-size:40px;
+    text-align:center;
+}
+
+.oracao1 h3{
+    text-align: justify
+}
+
+.oracao1 hr {
+    flex: 1;
+    border: 0;
+    height: 3px;
+    background-color: #003188;    
+}
+
+.oracao2 h1{
+    color: #003188;
+    font-size:40px;
+    text-align:center;
+}
+
+.oracao2 h2{
+    font-size: 12px;
+    text-align: right;
+}
+
+.oracao2 h3{
+    text-align: justify
+}
+
+.oracao2 hr {
+    flex: 1;
+    border: 0;
+    height: 3px;
+    background-color: #003188;    
+}
+
+.oracao3 h1{
+    color: #003188;
+    font-size:40px;
+    text-align:center;
+}
+
+.oracao3 h3{
+    text-align: justify
+}
+
+.oracao3 hr {
+    flex: 1;
+    border: 0;
+    height: 3px;
+    background-color: #003188;    
+}
+
+.box_final{
+    display:flex;
+    justify-content:space-between;
+    background-color: #000918;
+}
+
+.box_final a{
+    color: #fff;
+}
+
+.contato_final{
+    padding: 40px;        
+    color: #ffffff;
+    text-align:justify;
+}
+
+.contato_final h1{
+    font-size: 20px;
+}
+
+.contato_final h2{
+    font-size: 12px;
+}
+
+.navegação_final{
+    padding: 40px;    
+    color: #ffffff;
+    text-align:justify;
+}
+
+.navegação_final h1{
+    font-size: 20px;
+}
+
+.navegação_final h2{
+    font-size: 12px;
+}
+
+.compartilhe_final{
+    padding: 40px;    
+    color: #ffffff;
+    text-align:justify;
+}
+
+.compartilhe_final h1{
+    font-size: 20px;
+}
+
+.compartilhe_final h2{
+    font-size: 12px;
+}
