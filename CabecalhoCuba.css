@@ -1,0 +1,67 @@
+header{
+    width: 1200px; /* Define a largura do cabeçalho */
+    max-width: 90%; /* Define a largura máxima em 90% da tela */
+    margin: auto; /* Centraliza o cabeçalho horizontalmente */
+    display: grid; /* Usa display grid para o layout do cabeçalho */
+    grid-template-columns: 50px 1fr 50px; /* Define 3 colunas, com a coluna central flexível */
+    grid-template-rows: 50px; /* Define a altura das linhas como 50px */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    position: relative; /* Define a posição como relativa */
+    z-index: 100; /* Define a ordem de empilhamento acima de outros elementos */
+}
+
+header .logo{
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+header .menu{
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    list-style: none; /* Remove os marcadores de lista */
+    display: flex; /* Usa flexbox para alinhar os itens */
+    justify-content: center; /* Centraliza os itens no menu */
+    gap: 20px; /* Define um espaço entre os itens */
+    font-weight: 500; /* Define o peso da fonte como 500 */
+}
+
+header .menu li a{
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: inherit; /* Inherit the text color from the parent element */
+    font-weight: 500; /* Mantém o peso da fonte definido anteriormente */
+    padding: 10px 20px; /* Adiciona padding para melhorar o clique */
+    display: block; /* Faz com que o link ocupe todo o espaço do item da lista */
+    transition: 0.1s; /* Adiciona uma transição suave */
+}
+
+header .inicio,
+header .oracao,
+header .contato {
+    /*background-color: #000000; */
+    color: #000000; 
+    font-size: 20px;
+    cursor: pointer; /* Muda o ponteiro para indicar um item clicável */
+    text-align: center; /* Centraliza o texto */
+    transition: 0.8s; /* Define uma transição suave */
+    left: 50%;
+}
+
+header .inicio:hover,
+header .oracao:hover,
+header .contato:hover {
+    color: #ffffff; 
+    background-color: #000000; 
+    cursor: pointer; /* Muda o ponteiro para indicar um item clicável */
+    text-align: center; /* Centraliza o texto */
+    transition: 0.8s; /* Define uma transição suave */
+    left: 50%;
+}
+/* Estas regras aplicam efeitos de hover para os itens de menu 'inicio', 'oracao' e 'contato' */
+
+header .inicio:hover, header .oracao:hover, header .contato:hover {
+    width: auto; /* Evita problemas de layout ao definir uma largura fixa */
+}
+
+header .contato{
+    font: optional;
+}

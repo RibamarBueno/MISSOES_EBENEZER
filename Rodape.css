@@ -1,0 +1,104 @@
+/* Estilos para o rodapé */
+.footer {
+    background: linear-gradient(135deg, #1abc9c, #2c3e50); /* Gradiente moderno */
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex-basis: 30%;
+    min-width: 250px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-section:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.footer-section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ecf0f1;
+    text-transform: uppercase;
+}
+
+.footer-section p, .footer-section a, .footer-section li {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover, .footer-section li:hover {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+/* Ícones de redes sociais */
+.footer-section.share a {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-section.share a:hover {
+    color: #1abc9c;
+    transform: rotate(360deg); /* Rotaciona o ícone ao passar o mouse */
+}
+
+/* Lista de navegação */
+.footer-section.navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.navigation li {
+    padding: 10px 0;
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    color: #ecf0f1;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+/* Estilos de responsividade */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+/* Pequeno detalhe animado de bolhas no fundo */
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/bubbles.png');
+    opacity: 0.2;
+    z-index: -1;
+}
+

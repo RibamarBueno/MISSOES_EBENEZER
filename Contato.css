@@ -1,0 +1,98 @@
+/* Reset para remover margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte padrão e cores */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Estilo da seção de contato */
+.contato-section {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Imagem de contato */
+.foto_contato img.contato {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #008080;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Texto de contato */
+.texto_contato h1 {
+    font-size: 32px;
+    color: #008080;
+    margin-bottom: 10px;
+}
+
+.texto_contato p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Botão de chamada */
+.botao-contato {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008080;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-contato:hover {
+    background-color: #004d4d;
+}
+
+/* Estilo do mapa */
+.map-container iframe {
+    border-radius: 8px;
+    margin-top: 30px;
+    height: 500px;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .texto_contato h1 {
+        font-size: 28px;
+    }
+
+    .texto_contato p {
+        font-size: 16px;
+    }
+
+    .foto_contato img.contato {
+        width: 250px;
+    }
+
+    .botao-contato {
+        font-size: 16px;
+    }
+}

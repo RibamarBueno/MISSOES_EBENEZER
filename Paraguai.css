@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+/* Importa a fonte Poppins do Google Fonts */
+
+body{
+    font-family: Poppins; /* Define a fonte para todo o corpo da página */
+    margin: 0; /* Remove margens padrão */
+    background-color: #ffffff; /* Define a cor de fundo preta */
+    color: #000000; /* Define a cor do texto como cinza claro */
+}
+
+svg{
+    width: 25px; /* Define a largura dos SVGs como 25px */
+}
+
+
+.capa_br{
+    height: 100vh; /* Define a altura como 100% da altura da janela */
+    margin-top: -50px; /* Ajusta o espaço superior negativo */
+    position: relative; /* Define a posição como relativa */    
+}
+
+.capa_br img{
+    width: 100%; /* Faz a imagem preencher toda a largura do item */
+    height: 100%; /* Faz a imagem preencher toda a altura do item */
+    object-fit: cover; /* Corta a imagem para cobrir todo o espaço */
+}
+
+.capa_br::after{
+    content: ''; /* Cria um pseudo-elemento vazio */
+    width: 100%; /* Faz o pseudo-elemento preencher toda a largura */
+    height: 100%; /* Faz o pseudo-elemento preencher toda a altura */
+    position: absolute; /* Posiciona o pseudo-elemento de forma absoluta */
+    left: 0; /* Alinha à esquerda */
+    bottom: 0; /* Alinha ao fundo */
+    background-image: linear-gradient(to top, #ffffff 1%, transparent); 
+    /* Aplica um gradiente que vai de cinza escuro para transparente */
+}
+
+.capa_br .titulo_brasil{ /* Texto ao fundo */
+    position: absolute; /* Posiciona o conteúdo de forma absoluta */
+    top: 70%; /* Alinha o conteúdo 70% a partir do topo */  
+    left: 10% ;          
+    max-width: 100% ; /* Limita a largura máxima a 50% do contêiner */
+    z-index: 1; /* Define a ordem de empilhamento */
+    font-size: 500%;        
+}
+
+.capa_br .titulo_brasil span:nth-child(1){
+    letter-spacing: 150px; /* Define o espaçamento entre letras */
+    cursor: pointer;    
+}
+
+.box_br{
+    padding: 50px;
+    text-align: justify;
+    font-size: 60%;
+    color:rgba(0, 0, 0, 0.578) ;
+}
+
+
+/*INICIO QUIXERAMOBIM*/
+
+.capa_qx{
+    height: 100vh; /* Define a altura como 100% da altura da janela */
+    margin-top: -50px; /* Ajusta o espaço superior negativo */
+    position: relative; /* Define a posição como relativa */    
+}
+
+.capa_qx img{
+    width: 100%; /* Faz a imagem preencher toda a largura do item */
+    height: 100%; /* Faz a imagem preencher toda a altura do item */
+    object-fit: cover; /* Corta a imagem para cobrir todo o espaço */
+}
+
+.capa_qx::after{
+    content: ''; /* Cria um pseudo-elemento vazio */
+    width: 100%; /* Faz o pseudo-elemento preencher toda a largura */
+    height: 100%; /* Faz o pseudo-elemento preencher toda a altura */
+    position: absolute; /* Posiciona o pseudo-elemento de forma absoluta */
+    left: 0; /* Alinha à esquerda */
+    bottom: 0; /* Alinha ao fundo */
+    background-image: linear-gradient(to bottom, #ffffff 0%, transparent 50%);
+    background-image: linear-gradient(to top, #ffffff 0%, transparent 50%); 
+    /* Aplica um gradiente que vai de cinza escuro para transparente */
+}
+
+.capa_qx .titulo_qx{ /* Texto ao fundo */
+    position: absolute; /* Posiciona o conteúdo de forma absoluta */
+    top: 70%; /* Alinha o conteúdo 70% a partir do topo */  
+    left: 5% ;          
+    max-width: 100% ; /* Limita a largura máxima a 50% do contêiner */
+    z-index: 1; /* Define a ordem de empilhamento */
+    font-size: 500%;        
+}
+
+.capa_qx .titulo_qx span:nth-child(1){
+    letter-spacing: 45px; /* Define o espaçamento entre letras */
+    cursor: pointer;    
+}
+
+.box_qx{
+    padding: 50px;
+    text-align: justify;
+    font-size: 60%;
+    color:rgba(0, 0, 0, 0.568) ;
+}
+
+iframe{
+    padding: 50px;
+    max-width: 100% ;
+    align-items: center;
+    height: 500px;
+    width: 90%;
+}
+
+/* Estilos da seção de missionário */
+.missionario {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.missionario img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+.missionario h1, .missionario h2 {
+    color: #333;
+}
+
+/* Estilos da seção de fotos */
+.foto, .foto_1, .foto_2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.foto img, .foto_1 img, .foto_2 img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.foto img:hover, .foto_1 img:hover, .foto_2 img:hover {
+    transform: scale(1.05);
+}
+
+.linha {
+    border: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+/* Estilos de modal para ampliar imagens */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.texto_batismo,.texto_comida,.texto_igreja {
+    text-align: center;
+}
+
+/* Estilos para a seção do missionário */
+.missionario {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f9;
+}
+
+.missionario h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.missionario h2 {
+    font-size: 1.5rem;
+    color: #1abc9c;
+    margin-top: 15px;
+}
+
+.missionario img {
+    width: 400px;
+    border-radius: 50%;
+    border: 5px solid #1abc9c;
+    transition: transform 0.3s ease;
+}
+
+.missionario img:hover {
+    transform: scale(1.1);
+}
+
+/* Seção de batismo e alimentação */
+.texto_batismo, .texto_comida, .texto_igreja {
+    text-align: center;
+    padding: 20px;
+    color: #34495e;
+}
+
+.texto_batismo h1, .texto_comida h1, .texto_igreja h1 {
+    font-size: 2.2rem;
+    color: #1abc9c;
+    margin-bottom: 10px;
+}
+
+.texto_batismo h2, .texto_comida h2, .texto_igreja h2 {
+    font-size: 1.2rem;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+/* Galeria de fotos com efeito hover */
+.foto-galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.foto-galeria div {
+    position: relative;
+    margin: 10px;
+}
+
+.foto-galeria img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.foto-galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.linha {
+    border-top: 2px solid #1abc9c;
+    margin: 50px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .foto-galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-galeria img {
+        width: 90%;
+    }
+}
+/*FINAL QUIXERAMOBIM*/
+
+
+
+/*INICIO BOQUIRÃO DO LEÃO*/
+.capa_bql{
+    height: 60vh; /* Define a altura como 100% da altura da janela */
+    margin-top: -50px; /* Ajusta o espaço superior negativo */
+    position: relative; /* Define a posição como relativa */   
+    padding-top: 100px; 
+}
+
+.capa_bql img{
+    width: 100%; /* Faz a imagem preencher toda a largura do item */
+    height: 300px; /* Faz a imagem preencher toda a altura do item */
+    object-fit: cover; /* Corta a imagem para cobrir todo o espaço */
+}
+
+.capa_bql::after{
+    content: ''; /* Cria um pseudo-elemento vazio */
+    width: 100%; /* Faz o pseudo-elemento preencher toda a largura */
+    height: 100%; /* Faz o pseudo-elemento preencher toda a altura */
+    position: absolute; /* Posiciona o pseudo-elemento de forma absoluta */
+    left: 0; /* Alinha à esquerda */
+    bottom: 0; /* Alinha ao fundo */    
+    background-image: linear-gradient(to top, #ffffff 0%, transparent 50%); 
+    /* Aplica um gradiente que vai de cinza escuro para transparente */
+}
+
+.capa_bql .titulo_bql{ /* Texto ao fundo */
+    position: absolute; /* Posiciona o conteúdo de forma absoluta */
+    top: 70%; /* Alinha o conteúdo 70% a partir do topo */  
+    left: 5% ;          
+    max-width: 100% ; /* Limita a largura máxima a 50% do contêiner */
+    z-index: 1; /* Define a ordem de empilhamento */
+    font-size: 300%;      
+    color: rgb(0, 0, 0);  
+}
+
+.capa_bql .titulo_bql span:nth-child(1){
+    letter-spacing: 5px; /* Define o espaçamento entre letras */
+    cursor: pointer;    
+}
+
+.texto_bql{
+    padding: 50px;
+    text-align: justify;
+    font-size: 60%;
+    color:rgba(0, 0, 0, 0.571) ;
+}
+
+/*FINAL BOQUIRÃO DO LEÃO*/
