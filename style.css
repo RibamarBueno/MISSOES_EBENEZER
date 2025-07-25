@@ -3,9 +3,13 @@
 
 body{
     font-family: Poppins; /* Define a fonte para todo o corpo da página */
-    margin: 0; /* Remove margens padrão */
+    margin: 0; /* Remove margens padrão */    
+    padding: 0;
+    box-sizing: border-box;
     background-color: #010101; /* Define a cor de fundo preta */
     color: #eee; /* Define a cor do texto como cinza claro */
+    max-width: 100%;
+    overflow-x: hidden; /* Isso força o navegador a não mostrar scroll lateral */
 }
 
 a{
