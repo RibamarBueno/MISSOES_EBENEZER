@@ -46,7 +46,7 @@ svg{
 }
 
 .capa_br .titulo_brasil span:nth-child(1){
-    letter-spacing: 150px; /* Define o espaçamento entre letras */
+    letter-spacing: 50px; /* Define o espaçamento entre letras */
     cursor: pointer;    
 }
 
