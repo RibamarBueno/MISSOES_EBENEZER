@@ -187,7 +187,7 @@ header .contato{
     display: flex; /* UsaAqui está a continuação do comentário do código:```css*/
     display: flex; /* Usa flexbox para alinhar os itens */
     gap: 10px; /* Define um espaço entre as miniaturas */
-    width: 150%; /* Define a largura do contêiner das miniaturas */
+    width: 100%; /* Define a largura do contêiner das miniaturas */
     height: 220px; /* Define a altura do contêiner das miniaturas */
     padding: 0 50px; /* Aplica padding de 50px nas laterais */
     box-sizing: border-box; /* Inclui o padding e a borda na largura e altura */
