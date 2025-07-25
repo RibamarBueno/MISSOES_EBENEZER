@@ -376,5 +376,79 @@ iframe{
     font-size: 60%;
     color:rgba(0, 0, 0, 0.571) ;
 }
-
 /*FINAL BOQUIRÃO DO LEÃO*/
+
+/* ========= RESPONSIVIDADE PARA CELULARES ========= */
+@media (max-width: 768px) {
+  .capa_br, .capa_qx, .capa_bql {
+    height: auto;
+    margin-top: 0;
+  }
+
+  .capa_br .titulo_brasil,
+  .capa_qx .titulo_qx,
+  .capa_bql .titulo_bql {
+    top: 50%;
+    left: 5%;
+    font-size: 8vw;
+    letter-spacing: normal;
+    padding-right: 5%;
+  }
+
+  .box_br, .box_qx, .box_bql, .texto_bql {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .missionario img {
+    width: 250px;
+    height: 250px;
+  }
+
+  iframe {
+    padding: 20px;
+    height: 300px;
+  }
+
+  .foto img, .foto_1 img, .foto_2 img,
+  .foto-galeria img {
+    width: 90%;
+    height: auto;
+  }
+
+  .foto-galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-content {
+    max-width: 95%;
+    max-height: 80%;
+  }
+
+  .close {
+    font-size: 30px;
+    top: 10px;
+    right: 15px;
+  }
+
+  .texto_batismo h1,
+  .texto_comida h1,
+  .texto_igreja h1 {
+    font-size: 1.5rem;
+  }
+
+  .texto_batismo h2,
+  .texto_comida h2,
+  .texto_igreja h2 {
+    font-size: 1rem;
+  }
+
+  .missionario h1 {
+    font-size: 1.8rem;
+  }
+
+  .missionario h2 {
+    font-size: 1.2rem;
+  }
+}
