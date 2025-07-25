@@ -1,236 +1,161 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
-/* Importa a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-body{
-    font-family: Poppins; /* Define a fonte para todo o corpo da página */
-    margin: 0; /* Remove margens padrão */    
+/* RESET E BASE */
+*,
+*::before,
+*::after {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #010101; /* Define a cor de fundo preta */
-    color: #eee; /* Define a cor do texto como cinza claro */
-    max-width: 100%;
-    overflow-x: hidden; /* Isso força o navegador a não mostrar scroll lateral */
 }
 
-a{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #010101;
     color: #eee;
+    max-width: 100%;
+    overflow-x: hidden;
+    line-height: 1.6;
 }
 
-svg{
-    width: 25px; /* Define a largura dos SVGs como 25px */
+/* LAYOUT GERAL */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
 }
 
-header{
-    width: 1200px; /* Define a largura do cabeçalho */
-    max-width: 90%; /* Define a largura máxima em 90% da tela */
-    margin: auto; /* Centraliza o cabeçalho horizontalmente */
-    display: grid; /* Usa display grid para o layout do cabeçalho */
-    grid-template-columns: 50px 1fr 50px; /* Define 3 colunas, com a coluna central flexível */
-    grid-template-rows: 50px; /* Define a altura das linhas como 50px */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Alinha o conteúdo verticalmente */
-    position: relative; /* Define a posição como relativa */
-    z-index: 100; /* Define a ordem de empilhamento acima de outros elementos */
+header .logo {
+    width: 200px;
 }
 
-header .logo{
-    font-weight: bold; /* Define o peso da fonte como negrito */
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s;
 }
 
-header .menu{
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
-    list-style: none; /* Remove os marcadores de lista */
-    display: flex; /* Usa flexbox para alinhar os itens */
-    justify-content: center; /* Centraliza os itens no menu */
-    gap: 20px; /* Define um espaço entre os itens */
-    font-weight: 500; /* Define o peso da fonte como 500 */
+header nav a:hover {
+    color: #aaa;
 }
 
-header .menu li a{
-    text-decoration: none; /* Remove sublinhado dos links */
-    color: inherit; /* Inherit the text color from the parent element */
-    font-weight: 500; /* Mantém o peso da fonte definido anteriormente */
-    padding: 10px 20px; /* Adiciona padding para melhorar o clique */
-    display: block; /* Faz com que o link ocupe todo o espaço do item da lista */
-    transition: 0.3s; /* Adiciona uma transição suave */
+/* THUMBNAIL */
+.thumbnail {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
 }
 
-header .inicio:hover,
-header .oracao:hover,
-header .contato:hover{
-    color: #010101; /* Muda a cor do texto para preto no hover */
-    background-color: #eee; /* Muda a cor de fundo para cinza claro no hover */
-    cursor: pointer; /* Muda o ponteiro para indicar um item clicável */
-    text-align: center; /* Centraliza o texto */
-    transition: 0.8s; /* Define uma transição suave */
-}
-/* Estas regras aplicam efeitos de hover para os itens de menu 'inicio', 'oracao' e 'contato' */
-
-header .inicio:hover, header .oracao:hover, header .contato:hover {
-    width: auto; /* Evita problemas de layout ao definir uma largura fixa */
+/* SESSÃO CONTEÚDO */
+section {
+    padding: 4rem 8%;
+    text-align: center;
 }
 
-header .contato{
-    font: optional;
+section h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
-.search{
-    cursor:pointer;
+section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
 }
 
-/* CSS para o slider */
-.slider{
-    height: 100vh; /* Define a altura como 100% da altura da janela */
-    margin-top: -50px; /* Ajusta o espaço superior negativo */
-    position: relative; /* Define a posição como relativa */
+/* BOTÕES */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: #e91e63;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
 }
 
-.slider .list .item{
-    position: absolute; /* Posiciona os itens de forma absoluta */
-    inset: 0 0 0 0; /* Estende o item para preencher todo o contêiner */
-    overflow: hidden; /* Oculta o conteúdo que excede os limites */
-    opacity: 0; /* Inicialmente, torna o item invisível */
-    transition: .5s; /* Aplica uma transição suave */
+.btn:hover {
+    background: #c2185b;
 }
 
-.slider .list .item img{
-    width: 100%; /* Faz a imagem preencher toda a largura do item */
-    height: 100%; /* Faz a imagem preencher toda a altura do item */
-    object-fit: cover; /* Corta a imagem para cobrir todo o espaço */
+/* RODAPÉ */
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
 }
 
-.slider .list .item::after{
-    content: ''; /* Cria um pseudo-elemento vazio */
-    width: 100%; /* Faz o pseudo-elemento preencher toda a largura */
-    height: 100%; /* Faz o pseudo-elemento preencher toda a altura */
-    position: absolute; /* Posiciona o pseudo-elemento de forma absoluta */
-    left: 0; /* Alinha à esquerda */
-    bottom: 0; /* Alinha ao fundo */
-    background-image: linear-gradient(to top, #313131 10%, transparent); 
-    /* Aplica um gradiente que vai de cinza escuro para transparente */
-}
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1024px) {
+    section h1 {
+        font-size: 2.5rem;
+    }
 
-.slider .list .item .content{ /* Texto ao fundo */
-    position: absolute; /* Posiciona o conteúdo de forma absoluta */
-    left: 10%; /* Alinha o conteúdo 10% a partir da esquerda */
-    top: 5%; /* Alinha o conteúdo 5% a partir do topo */
-    width: 600px; /* Define a largura do conteúdo */
-    max-width: 50%; /* Limita a largura máxima a 50% do contêiner */
-    z-index: 1; /* Define a ordem de empilhamento */
-}
+    section p {
+        font-size: 1.1rem;
+    }
 
-.slider .list .item .content p:nth-child(1){
-    letter-spacing: 10px; /* Define o espaçamento entre letras */
-    cursor: pointer;
-}
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.slider .list .item .content h2{
-    font-size: 100px; /* Define o tamanho da fonte como 100px */
-    margin: 0; /* Remove margens padrão */
-}
+    header nav {
+        margin-top: 1rem;
+    }
 
-.slider .list .item.active{
-    opacity: 1; /* Torna o item visível */
-    z-index: 10; /* Define a ordem de empilhamento acima de outros itens */
-}
-
-@keyframes showContent {
-    to{
-        transform: translateY(0); /* Move o conteúdo para a posição original */
-        filter: blur(0); /* Remove o desfoque */
-        opacity: 1; /* Torna o conteúdo totalmente visível */
+    header nav a {
+        margin: 0 1rem;
     }
 }
 
-.slider .list .item.active p:nth-child(1),
-.slider .list .item.active h2,
-.slider .list .item.active p:nth-child(3){
-    transform: translateY(30px); /* Inicialmente move o conteúdo 30px para baixo */
-    filter: blur(20px); /* Aplica um desfoque de 20px */
-    opacity: 0; /* Inicialmente torna o conteúdo invisível */
-    animation: showContent .5s .7s ease-in-out 1 forwards; /* Aplica a animação showContent ao conteúdo com um atraso de 0.7s */
-}
-
-.slider .list .item.active h2{
-    animation-delay: 1s; /* Adiciona um atraso de 1s antes de animar o h2 */
-}
-
-.slider .list .item.active p:nth-child(3){
-    animation-duration: 1.3s; /* Define a duração da animação para 1.3s */
-}
-
-.arrows{
-    position: absolute; /* Posiciona as setas de forma absoluta */
-    top: 30%; /* Alinha as setas 30% a partir do topo */
-    right: 50px; /* Alinha as setas 50px a partir da direita */
-    z-index: 100; /* Define a ordem de empilhamento acima de outros elementos */
-}
-
-.arrows button{
-    background-color: #eee5; /* Define a cor de fundo das setas com transparência */
-    border: none; /* Remove bordas */
-    font-family: monospace; /* Define a fonte como monospace */
-    width: 40px; /* Define a largura dos botões como 40px */
-    height: 40px; /* Define a altura dos botões como 40px */
-    border-radius: 5px; /* Aplica um raio de borda de 5px */
-    font-size: x-large; /* Define o tamanho da fonte como grande */
-    color: #eee; /* Define a cor do texto das setas como cinza claro */
-    transition: .5s; /* Aplica uma transição suave */
-}
-
-.arrows button:hover{
-    background-color: #eee; /* Muda a cor de fundo para cinza claro no hover */
-    color: black; /* Muda a cor do texto para preto no hover */
-}
-
-.thumbnail{ /* Imagens pequenas em baixo */
-    position: absolute; /* Posiciona a miniatura de forma absoluta */
-    bottom: 1px; /* Alinha a miniatura 1px a partir do fundo */
-    z-index: 11; /* Define a ordem de empilhamento */
-    display: flex; /* UsaAqui está a continuação do comentário do código:```css*/
-    display: flex; /* Usa flexbox para alinhar os itens */
-    gap: 10px; /* Define um espaço entre as miniaturas */
-    width: 100%; /* Define a largura do contêiner das miniaturas */
-    height: 220px; /* Define a altura do contêiner das miniaturas */
-    padding: 0 50px; /* Aplica padding de 50px nas laterais */
-    box-sizing: border-box; /* Inclui o padding e a borda na largura e altura */
-    overflow: auto; /* Permite rolar o conteúdo se ele exceder o contêiner */
-    justify-content: center; /* Centraliza as miniaturas horizontalmente */
-}
-
-.thumbnail::-webkit-scrollbar{
-    width: 0; /* Remove a barra de rolagem no WebKit (Chrome, Safari) */
-}
-
-.thumbnail .item{ /* Tamanho das imagens pequenas embaixo */
-    width: 80px; /* Define a largura de cada miniatura */
-    height: 200px; /* Define a altura de cada miniatura */
-    filter: brightness(.5); /* Reduz o brilho das miniaturas */
-    transition: .5s; /* Aplica uma transição suave ao brilho */
-    flex-shrink: 0; /* Impede que as miniaturas encolham ao redimensionar */
-}
-
-.thumbnail .item img{
-    width: 100%; /* Faz a imagem preencher toda a largura da miniatura */
-    height: 100%; /* Faz a imagem preencher toda a altura da miniatura */
-    object-fit: cover; /* Corta a imagem para cobrir todo o espaço */
-    border-radius: 10px; /* Aplica um raio de borda de 10px às imagens */
-}
-
-.thumbnail .item.active{
-    filter: brightness(1.5); /* Aumenta o brilho da miniatura ativa */
-}
-
-
-@media screen and (max-width: 678px) {
-    .thumbnail{
-        justify-content: start; /* No celular, alinha as miniaturas à esquerda */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 3rem 5%;
     }
-    .slider .list .item .content h2{
-        font-size: 60px; /* Reduz o tamanho da fonte no celular */
+
+    section h1 {
+        font-size: 2rem;
     }
-    .arrows{
-        top: 10%; /* Move as setas para o topo no celular */
+
+    section p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section h1 {
+        font-size: 1.7rem;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 1rem auto 0;
+    }
+
+    header .logo {
+        width: 150px;
+    }
+
+    header nav a {
+        display: block;
+        margin: 0.5rem 0;
     }
 }
