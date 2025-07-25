@@ -42,7 +42,7 @@ svg{
     left: 10% ;          
     max-width: 100% ; /* Limita a largura máxima a 50% do contêiner */
     z-index: 1; /* Define a ordem de empilhamento */
-    font-size: 500%;        
+    font-size: 100%;        
 }
 
 .capa_br .titulo_brasil span:nth-child(1){
@@ -90,7 +90,7 @@ svg{
     left: 5% ;          
     max-width: 100% ; /* Limita a largura máxima a 50% do contêiner */
     z-index: 1; /* Define a ordem de empilhamento */
-    font-size: 500%;        
+    font-size: 100%;        
 }
 
 .capa_qx .titulo_qx span:nth-child(1){
@@ -361,7 +361,7 @@ iframe{
     left: 5% ;          
     max-width: 100% ; /* Limita a largura máxima a 50% do contêiner */
     z-index: 1; /* Define a ordem de empilhamento */
-    font-size: 300%;      
+    font-size: 100%;      
     color: rgb(0, 0, 0);  
 }
 
